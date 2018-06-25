@@ -61,7 +61,7 @@
     vector02 = [10,11,21,1]
     #Invalid Inputs
     vector03 = [1,1,1,1]
-    vector = [1,1]
+    vector04 = [1,1]
     print(vecSubtract(vector01,vector02))
 
 
