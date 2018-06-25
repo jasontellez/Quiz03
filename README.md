@@ -5,7 +5,7 @@
     def dot(vector01,vector02):
    
     """
-    Inputs 2 vectors as arguments and returns the dot product of those vectors. This is done by first checking for the condition of the vectors being of equal dimensions. If the condition is met, the vectors are iterated through a for-loop so that each element in the list is multiplied by its respectively positioned element in the opposite vector. If the conditio is not met, the string 'invalid input' is returned.
+    Takes 2 vectors and checks to see if they have the same dimension. If so, then the code iterates through the elements and returns the dot product of the vectors. If the vectors have different dimensions, then the string "Invalid Input" is returned and the vectors must be adjusted to fit the condition.
     """  
      
      element = 0 #empty value for storing data 
@@ -35,7 +35,7 @@
 
     def vecSubtract(vector01,vector02):
       """
-      A function that perfroms vector subtraction by iterating through the elements within the vectors and iteratively subtracts the elements from one vector to the other. Finally, the resulting vector is stored in an empty list and printed.
+      Takes 2 vectors and subtracts the elements from the first vector by the elements in the second and returns the new vector. For the vectors to be subtracted they must have the same dimension, if they don't match then the string "Invalid Input" is returned.
       """
 
       element = 0 #empty value for storing values of elements
@@ -70,8 +70,7 @@
     def ScalarVecMulti(scalar,vector):
   
       """
-      Function that inputs a vector aqnd a scalar and multiplies the values to return a new vector.
-      This is done via a for-loop by stroing the new values inside premade empty values
+      This function takes a vector and iterates through the elements to multiply each of the elements by a scalar to return the new vector.
       """
 
       element = 0 #empty value for storing elements of new vector
@@ -97,7 +96,7 @@
     def infNorm(vector):
   
       """
-      A function that iterates through each element in a list and determines the absolute value of the elements. By an if-statement, the code then finds the element with the greatest absolute value and returns that element's absolute value.
+      A function that iterates through each element in a list and determines the absolute value of the elements. Then, by the if-statement, the value of "norm" is replace by the greatest absolute value of each of the element.
       """
 
       norm = 0  #empty value for storing norm
@@ -132,7 +131,7 @@
     def normalize(vector):
 
       """
-      A function that utilizes the previously defined infNorm function that iterates through the elements of a vector and using aritmetic with a scalar to form a normalized vector with respect to the norm. Once the values are created, the new elements are stored in an empty list using the .append function and finally the result is printed.
+     This code returns a vector that is normalized with respect to the previously defined infNorm value. The code does this by iterating through the elements and performs artihmetic and appends the new values to an empty list to create the desired vector.
       """
 
       norm = infNorm(vector)  #calls value from previous function
